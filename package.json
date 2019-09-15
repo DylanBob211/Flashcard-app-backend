@@ -10,8 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/whatwg-fetch": "0.0.33",
     "cors": "*",
+    "dotenv": "^8.1.0",
     "express": "*",
-    "request": "^2.88.0"
+    "node-fetch": "^2.6.0",
+    "request": "^2.88.0",
+    "unsplash-js": "^5.0.0",
+    "whatwg-fetch": "^3.0.0"
   }
 }
