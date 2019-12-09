@@ -19,9 +19,6 @@ const translateKey = process.env.YANDEX_TRANSLATE_API_KEY;
 app.use(express.json());
 app.use(cors());
 
-
-console.log(process.env);
-
 app.post('/translate', (req, res) => {
   const options = {
     method: 'POST',
@@ -47,7 +44,6 @@ app.post('/translate', (req, res) => {
 });
 
 app.post('/searchphoto', (req, res) => {
-  console.log(req.body.data)
   unsplash.search.photos(req.body.data)
     .then(data => data.json())
     .then(data => res.send(data))
