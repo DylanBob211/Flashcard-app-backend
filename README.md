@@ -12,11 +12,9 @@ In order to install this app:
 
 API use:
 
-- create a .env file in the Flashcard-app dir `touch .env`
+- create a default.json file in the config dir `touch config/default.json` and set it as shown in the `defaultSample.json` file
 
 This app makes use of Unsplash and Yandex Translate APIs so you must first obtain your API keys
-
-- `echo YANDEX_TRANSLATE_API_KEY=YOUR_API_KEY >> .env && UNSPLASH_API_KEY=YOUR_API_KEY >> .env`
 
 Now you can run the development server from the client
 - `cd Flashcard-app-client && npm start`

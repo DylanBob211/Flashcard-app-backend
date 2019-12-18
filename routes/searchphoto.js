@@ -2,9 +2,12 @@ const express = require('express');
 const router = express.Router();
 const request = require('request');
 const Unsplash = require('unsplash-js').default;
+const config = require('config');
+
+const unsplash_api_key = config.get('unsplash_api_key');
 
 const unsplash = new Unsplash({
-  applicationId: process.env.UNSPLASH_API_KEY || '66c8f4bbdcd250ba88db15412fb4cf728a9a8c4db261db2a356b22a1365aa20a',
+  applicationId: unsplash_api_key,
 });
 
 router.post('/', (req, res) => {

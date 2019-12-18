@@ -11,9 +11,11 @@
   "license": "ISC",
   "dependencies": {
     "@types/whatwg-fetch": "0.0.33",
+    "config": "^3.2.4",
     "cors": "*",
     "dotenv": "^8.1.0",
     "express": "*",
+    "mongoose": "^5.8.1",
     "node-fetch": "^2.6.0",
     "request": "^2.88.0",
     "unsplash-js": "^5.0.0",

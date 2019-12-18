@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const request = require('request');
+const config = require('config');
 
-
+const translateKey = config.get('yandex_api_key');
 const YANDEX_TRANSLATE_URL = 'https://translate.yandex.net/api/v1.5/tr.json';
-const translateKey = process.env.YANDEX_TRANSLATE_API_KEY || 'trnsl.1.1.20190708T121747Z.01ac6564636ef01e.c1f2621aa834e2ab8d58b26e6d9402ebe9e3aeec';
 
 
 // @route POST translate
