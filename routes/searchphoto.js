@@ -10,6 +10,10 @@ const unsplash = new Unsplash({
   applicationId: unsplash_api_key,
 });
 
+// @route POST searchphoto
+// @desc Download pictures URLs
+// @access Public
+
 router.post('/', (req, res) => {
   unsplash.search.photos(req.body.data)
     .then(data => data.json())
